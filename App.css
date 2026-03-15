@@ -1,0 +1,53 @@
+.categories {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.categories button {
+  padding: 8px 16px;
+  border: none;
+  background: #f2f2f2;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.categories button.active,
+.categories button:hover {
+  background: #ff4081;
+  color: #fff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('/images/background.jpg'); /* put image in public/images folder */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
